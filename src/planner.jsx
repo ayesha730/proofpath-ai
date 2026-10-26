@@ -10,7 +10,7 @@ const starterTasks = [
   "Review everything and submit",
 ];
 
-function getSavedState()
+function getSavedState(){
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
   } catch {
