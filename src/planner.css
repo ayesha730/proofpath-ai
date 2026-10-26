@@ -1,0 +1,281 @@
+.planner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px;
+  color: #f4f0ff;
+}
+
+.planner-header {
+  margin-bottom: 28px;
+}
+
+.planner-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #b6a1ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.planner-header h1 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.planner-header p,
+.planner-muted {
+  color: #aaa6c0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.planner-panel {
+  margin: 20px 0;
+  padding: 25px;
+  border: 1px solid #30264d;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #17132a, #100e1b);
+}
+
+.planner-panel label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.planner-panel input:not([type="checkbox"]),
+.planner-panel textarea,
+.planner-panel select {
+  width: 100%;
+  min-height: 44px;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #40365e;
+  border-radius: 9px;
+  outline: none;
+  background: #0d0b17;
+  color: #f4f0ff;
+  font: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.planner-panel textarea {
+  resize: vertical;
+}
+
+.planner-panel input:focus,
+.planner-panel textarea:focus,
+.planner-panel select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px #a78bfa20;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.planner-section-heading,
+.planner-opportunity-top,
+.planner-reminders {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.planner-section-heading h2,
+.planner-reminders h2 {
+  margin: 0 0 18px;
+  font-size: 22px;
+}
+
+.planner-primary,
+.planner-secondary {
+  min-height: 42px;
+  padding: 11px 17px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.planner-primary {
+  background: linear-gradient(100deg, #8b5cf6, #6d4aff);
+  color: white;
+}
+
+.planner-primary:hover {
+  filter: brightness(1.12);
+}
+
+.planner-secondary {
+  background: #211a36;
+  border-color: #49376e;
+  color: #e6dcff;
+}
+
+.planner-secondary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.planner-notice {
+  color: #c9b8ff;
+  font-size: 13px;
+}
+
+.planner-progress {
+  margin: 14px 0 22px;
+}
+
+.planner-progress strong {
+  font-size: 24px;
+}
+
+.planner-progress span {
+  color: #aaa6c0;
+  font-size: 12px;
+}
+
+.planner-progress-track {
+  height: 7px;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #302744;
+}
+
+.planner-progress-track div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  transition: width 200ms ease;
+}
+
+.planner-empty {
+  padding: 26px;
+  border: 1px dashed #49376e;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.planner-empty p {
+  color: #aaa6c0;
+  font-size: 13px;
+}
+
+.planner-opportunity {
+  margin-top: 18px;
+  padding: 20px;
+  border: 1px solid #34294e;
+  border-radius: 13px;
+  background: #100e1c;
+}
+
+.planner-opportunity h3 {
+  margin: 12px 0 6px;
+  font-size: 17px;
+}
+
+.planner-opportunity a {
+  color: #c4b5fd;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.planner-tag {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #30204e;
+  color: #d8c9ff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.planner-remove {
+  border: 0;
+  background: transparent;
+  color: #e8a8bc;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.planner-task-list {
+  margin-top: 20px;
+}
+
+.planner-panel .planner-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  margin: 0;
+  border-top: 1px solid #302744;
+  cursor: pointer;
+}
+
+.planner-panel .planner-task input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-top: 3px;
+  accent-color: #a78bfa;
+  flex-shrink: 0;
+}
+
+.planner-task span {
+  display: grid;
+  gap: 6px;
+}
+
+.planner-task strong {
+  font-size: 12px;
+}
+
+.planner-task small {
+  color: #aaa6c0;
+  font-size: 11px;
+}
+
+.planner-task .is-done {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+.planner-reminders {
+  align-items: center;
+}
+
+.planner-reminders > div {
+  max-width: 600px;
+}
+
+@media (max-width: 650px) {
+  .planner {
+    padding: 18px;
+  }
+
+  .planner-panel {
+    padding: 18px;
+  }
+
+  .planner-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .planner-section-heading,
+  .planner-opportunity-top,
+  .planner-reminders {
+    flex-direction: column;
+  }
+}

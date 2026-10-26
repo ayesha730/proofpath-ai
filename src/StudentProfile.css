@@ -1,0 +1,215 @@
+.student-profile-page {
+  min-height: 100vh;
+  padding: 36px 24px 60px;
+  background: #0b0d16;
+  color: #f4f3fb;
+}
+
+.profile-heading,
+.student-profile-form {
+  width: min(100%, 850px);
+  margin: 0 auto;
+}
+
+.profile-kicker {
+  color: #a993ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.profile-heading h1 {
+  max-width: 600px;
+  margin: 14px 0;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.profile-heading p,
+.section-heading p {
+  color: #a7a8ba;
+  line-height: 1.6;
+}
+
+.student-profile-form {
+  margin-top: 32px;
+}
+
+.profile-section {
+  margin-bottom: 18px;
+  padding: 24px;
+  border: 1px solid #292b3c;
+  border-radius: 18px;
+  background: #111420;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.section-heading > span {
+  color: #a993ff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.section-heading p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.profile-grid label,
+.goal-label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #deddec;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.profile-grid small {
+  color: #9293a7;
+  font-weight: 400;
+}
+
+.profile-grid input,
+.profile-grid select,
+.profile-grid textarea,
+.goal-label select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #303247;
+  border-radius: 10px;
+  outline: none;
+  background: #0c0f19;
+  color: #f5f4fc;
+  font: inherit;
+  font-weight: 400;
+}
+
+.profile-grid input:focus,
+.profile-grid select:focus,
+.profile-grid textarea:focus,
+.goal-label select:focus {
+  border-color: #9479ff;
+}
+
+.profile-grid textarea {
+  min-height: 82px;
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.choice-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 13px;
+  border: 1px solid #34364a;
+  border-radius: 10px;
+  background: #0c0f19;
+  color: #c6c6d5;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.choice-chip.selected {
+  border-color: #8065f0;
+  background: #241d42;
+  color: #e7dfff;
+}
+
+.choice-chip input {
+  accent-color: #9479ff;
+}
+
+.goal-label {
+  margin: 20px 0;
+}
+
+.country-label {
+  margin: 24px 0 12px;
+  color: #deddec;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.profile-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: #8263f5;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.profile-submit:hover {
+  background: #947bff;
+}
+
+.profile-submit span {
+  font-size: 22px;
+}
+
+.profile-note {
+  color: #8f91a5;
+  font-size: 12px;
+  text-align: center;
+}
+
+.profile-error {
+  color: #ff9caa;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .student-profile-page {
+    padding: 28px 14px 40px;
+  }
+
+  .profile-section {
+    padding: 17px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+}
