@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Planner from "./planner";
+import planner from "./planner";
 import StudentProfile from "./StudentProfile";
 import DiscoverOpportunities from "./DiscoverOpportunities";
 import {
