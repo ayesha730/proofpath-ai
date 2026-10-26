@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import "./Planner.css";
+import "./planner.css";
 
 const STORAGE_KEY = "proofpath-mission-planner-v1";
 
